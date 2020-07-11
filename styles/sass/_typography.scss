@@ -26,6 +26,7 @@ h1 {
     font-family: 'IM Fell English', serif;
     font-style: italic;
     font-size: 7.9rem;
+    text-transform: uppercase;
 }
 
 // new destina..., communi..., blog..., next destin...
@@ -56,6 +57,7 @@ h4 {
 //body text
 p {
     font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
     line-height: 2.8rem;
     letter-spacing: .01rem;
 }
@@ -73,4 +75,14 @@ button {
     text-align: center;
     background-color: $accent-color;
     color: $primary-color;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    line-height: 2.9rem;
+    letter-spacing: .01rem;
+    padding: 0px 20px;
+    color: $light-color;
+    text-decoration: none;
 }

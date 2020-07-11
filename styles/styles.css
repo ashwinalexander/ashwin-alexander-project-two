@@ -359,6 +359,7 @@ h1 {
   font-family: 'IM Fell English', serif;
   font-style: italic;
   font-size: 7.9rem;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -385,6 +386,7 @@ h4 {
 
 p {
   font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
   line-height: 2.8rem;
   letter-spacing: .01rem;
 }
@@ -404,14 +406,20 @@ button {
   color: #0D457F;
 }
 
-header {
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  background-position: top center;
-  height: 70vh;
-  width: 100%;
-  padding: 0px;
+a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  line-height: 2.9rem;
+  letter-spacing: .01rem;
+  padding: 0px 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav {
+  position: absolute;
+  top: 20px;
+  left: 30px;
 }
 
 nav ul {
@@ -420,24 +428,52 @@ nav ul {
   display: flex;
 }
 
+nav ul li {
+  padding: 2px;
+}
+
 nav ul li a {
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   line-height: 2.9rem;
   letter-spacing: .01rem;
+  padding: 0px 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav ul li:hover::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  padding-bottom: 0px;
+  border-bottom: solid yellow 2px;
 }
 
 footer {
   background-color: #FDD908;
+  color: #0D457F;
+  padding: 5px;
 }
 
 footer p {
   text-align: center;
 }
 
+footer a {
+  color: #0D457F;
+  padding: 0px;
+}
+
 .contact-hero {
-  background-image: url("../assets/contact-header.jpg");
-  background-position: top center;
-  display: block;
+  position: relative;
+}
+
+.contact-hero-text {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+  color: #ffffff;
 }
 /*# sourceMappingURL=styles.css.map */

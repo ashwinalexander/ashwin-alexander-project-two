@@ -1,5 +1,10 @@
 .contact-hero {
-    background-image: url("../assets/contact-header.jpg");
-    background-position: top center;
-    display: block;
+    position: relative;
+}
+
+.contact-hero-text {
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    color: $light-color;
 }

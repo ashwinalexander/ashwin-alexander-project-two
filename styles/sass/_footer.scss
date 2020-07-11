@@ -1,6 +1,12 @@
 footer {
     background-color: $accent-color;
+    color: $primary-color;
+    padding: 5px;
     p {
         text-align: center;
+    }
+    a {
+        color: $primary-color;
+        padding: 0px;
     }
 }

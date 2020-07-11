@@ -1,13 +1,30 @@
-nav {
-    ul {
-        display: flex;
-        li {
-            a {
-                font-family: 'Roboto', sans-serif;
-                font-size: 2rem;
-                line-height: 2.9rem;
-                letter-spacing: .01rem;
+    nav {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        ul {
+            display: flex;
+            li {
+                padding: 2px;
+                a {
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 2rem;
+                    line-height: 2.9rem;
+                    letter-spacing: .01rem;
+                    padding: 0px 20px;
+                    color: $light-color;
+                    text-decoration: none;
+                }
+                &:hover {
+                    &::after {
+                        content: "";
+                        display: block;
+                        margin: 0 auto;
+                        width: 60%;
+                        padding-bottom: 0px;
+                        border-bottom: solid yellow 2px;
+                    }
+                }
             }
         }
     }
-}

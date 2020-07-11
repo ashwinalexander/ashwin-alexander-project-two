@@ -1,8 +1,14 @@
+//styles reusable across pages 
 @import "./sass/setup";
 @import "./sass/typography";
 @import "./sass/header";
 @import "./sass/nav";
 @import "./sass/footer";
+//extra styles at page level
 @import "./sass/page-home";
 @import "./sass/page-blog";
 @import "./sass/page-contact";
+// todo:
+// 1. remove extraneous styles from the setup
+// 2. add in media queries
+// 3.
