@@ -1,0 +1,18 @@
+ul.nav {
+  background: red;
+  width: 100%;
+}
+
+ul.nav li {
+  border-right: 1px solid #B3EB95;
+}
+
+ul.nav li a {
+  background: #B3EB95;
+  padding: 10px;
+}
+
+ul.nav li a:hover {
+  background: yellow;
+}
+/*# sourceMappingURL=styles.css.map */
