@@ -1,0 +1,76 @@
+// color palette
+$primary-color: #0D457F;
+$secondary-color: #EAFEFC;
+$accent-color: #FDD908;
+$light-color: #ffffff;
+//typography and initial setup
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0px auto;
+    /* wrapper border debugger */
+    border: gray dotted 1px;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+// boat ride..., get in ... blog
+h1 {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: 7.9rem;
+}
+
+// new destina..., communi..., blog..., next destin...
+h2 {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: 4.5rem;
+}
+
+//our program..., new location...
+h3 {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: 4.0rem;
+    line-height: 5.8rem;
+    letter-spacing: .13rem;
+}
+
+// side back headings (our miss..., recent...)
+h4 {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: 2.5rem;
+    line-height: 5.8rem;
+    letter-spacing: 0.08rem;
+}
+
+//body text
+p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 2.8rem;
+    letter-spacing: .01rem;
+}
+
+i {
+    font-size: 3rem;
+    color: $primary-color;
+}
+
+button {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: 2.24rem;
+    line-height: 4.16rem;
+    text-align: center;
+    background-color: $accent-color;
+    color: $primary-color;
+}

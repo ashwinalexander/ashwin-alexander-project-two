@@ -338,14 +338,106 @@ textarea {
   overflow: hidden;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto;
+  /* wrapper border debugger */
+  border: gray dotted 1px;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
 h1 {
-  background-color: yellow;
-  color: pink;
-  font-weight: 100;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  font-size: 7.9rem;
 }
 
 h2 {
-  color: red;
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  font-size: 4.5rem;
+}
+
+h3 {
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  font-size: 4.0rem;
+  line-height: 5.8rem;
+  letter-spacing: .13rem;
+}
+
+h4 {
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  font-size: 2.5rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.08rem;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  line-height: 2.8rem;
+  letter-spacing: .01rem;
+}
+
+i {
+  font-size: 3rem;
+  color: #0D457F;
+}
+
+button {
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  font-size: 2.24rem;
+  line-height: 4.16rem;
+  text-align: center;
+  background-color: #FDD908;
+  color: #0D457F;
+}
+
+header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: top center;
+  height: 70vh;
+  width: 100%;
+  padding: 0px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  line-height: 2.9rem;
+  letter-spacing: .01rem;
+}
+
+footer {
+  background-color: #FDD908;
+}
+
+footer p {
+  text-align: center;
+}
+
+.contact-hero {
+  background-image: url("../assets/contact-header.jpg");
+  background-position: top center;
+  display: block;
 }
 /*# sourceMappingURL=styles.css.map */
