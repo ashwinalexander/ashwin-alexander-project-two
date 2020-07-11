@@ -1,0 +1,14 @@
+//styles reusable across pages 
+@import "./setup";
+@import "./header";
+@import "./nav";
+@import "./typography";
+@import "./footer";
+//extra styles at page level
+@import "./page-home";
+@import "./page-blog";
+@import "./page-contact";
+// todo:
+// 1. remove extraneous styles from the setup
+// 2. add in media queries
+// 3. make form accessible

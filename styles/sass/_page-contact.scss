@@ -6,5 +6,23 @@
     position: absolute;
     top: 150px;
     left: 30px;
-    color: $light-color;
+    // color: $light-color;
+    color: yellow;
+}
+
+.flexrow {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.contact-details {
+    border: 2px dotted red;
+}
+
+.blah {
+    width: 100%;
+    border: solid 10px dotted;
+    margin: 20px;
+    padding: 20px;
 }

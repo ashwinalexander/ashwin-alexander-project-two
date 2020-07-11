@@ -338,6 +338,31 @@ textarea {
   overflow: hidden;
 }
 
+nav {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  padding: 2px;
+}
+
+nav ul li a :hover::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  padding-bottom: 0px;
+  border-bottom: solid yellow 2px;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -416,41 +441,6 @@ a {
   text-decoration: none;
 }
 
-nav {
-  position: absolute;
-  top: 20px;
-  left: 30px;
-}
-
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-nav ul li {
-  padding: 2px;
-}
-
-nav ul li a {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
-  line-height: 2.9rem;
-  letter-spacing: .01rem;
-  padding: 0px 20px;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-nav ul li:hover::after {
-  content: "";
-  display: block;
-  margin: 0 auto;
-  width: 60%;
-  padding-bottom: 0px;
-  border-bottom: solid yellow 2px;
-}
-
 footer {
   background-color: #FDD908;
   color: #0D457F;
@@ -474,6 +464,28 @@ footer a {
   position: absolute;
   top: 150px;
   left: 30px;
-  color: #ffffff;
+  color: yellow;
 }
-/*# sourceMappingURL=styles.css.map */
+
+.flexrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-details {
+  border: 2px dotted red;
+}
+
+.blah {
+  width: 100%;
+  border: solid 10px dotted;
+  margin: 20px;
+  padding: 20px;
+}
