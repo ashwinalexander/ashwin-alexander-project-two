@@ -1,0 +1,85 @@
+// styles for the home page
+.home-hero {
+    position: relative;
+}
+
+//h1 text within the hero image
+.home-hero-text {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    color: $light-color;
+    z-index: 1;
+}
+
+.four-points {
+    padding: 150px 80px 130px 50px;
+    .flex-row {
+        div {
+            width: 50%;
+        }
+        .flex-point {
+            margin: 0px;
+            padding: 10px 10px 10px 20px;
+            h2,
+            p {
+                padding: 0px;
+                color: $primary-color;
+            }
+        }
+        div {
+            width: 100%;
+        }
+    }
+}
+
+
+}
+//the extra vacation days section
+.vacation-days {
+    padding: 120px 120px 100px 120px; // slightly more padding on the top
+    text-align: center;
+    background-color: $secondary-color;
+    h2 {
+        color: $primary-color;
+    }
+    
+    div {
+        padding: 10px 0px;
+    }
+}
+//win a trip of a lifetime section
+.win-trip {
+    padding: 100px 100px;
+    display: flex;
+    p,
+    h2 {
+        color: $primary-color;
+    }
+}
+//the  column with the photo 
+.lady-column {
+    width: 35%;
+    padding: 40px;
+    img {
+        box-shadow: -20px 20px $accent-color;
+    }
+}
+//the flexed column within the lifetime section
+.lifetime-column {
+    width: 65%;
+    padding: 20px;
+    div {
+        padding-bottom: 15px;
+    }
+}
+//photo gallery 
+.gallery-photos {
+    background-color: $primary-color;
+    justify-content: center;
+    padding: 20px 0px;
+    div {
+        margin: 20px;
+        width: calc(100%/3 - 120px);
+    }
+}

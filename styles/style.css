@@ -391,6 +391,7 @@ h2 {
   font-family: 'IM Fell English', serif;
   font-style: italic;
   font-size: 4.5rem;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -433,6 +434,7 @@ button {
   background-color: #FDD908;
   color: #0D457F;
   text-transform: uppercase;
+  padding: 0px 15px;
 }
 
 a {
@@ -482,6 +484,108 @@ footer p {
 footer a {
   color: #0D457F;
   padding: 0px;
+}
+
+.home-hero {
+  position: relative;
+}
+
+.home-hero-text {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.four-points {
+  padding: 150px 80px 130px 50px;
+}
+
+.four-points .flex-row div {
+  width: 50%;
+}
+
+.four-points .flex-row .flex-point {
+  margin: 0px;
+  padding: 10px 10px 10px 20px;
+}
+
+.four-points .flex-row .flex-point p {
+  padding: 0px;
+  color: #0D457F;
+}
+
+.four-points .flex-row .flex-point h2 {
+  padding: 5px;
+  color: #0D457F;
+}
+
+.four-points .flex-row .flex-point h2::before {
+  content: 'dd';
+  padding-left: 5px;
+}
+
+.four-points .flex-row .flex-point div {
+  width: 100%;
+}
+
+.vacation-days {
+  padding: 120px 120px 100px 120px;
+  text-align: center;
+  background-color: #EAFEFC;
+}
+
+.vacation-days h2 {
+  color: #0D457F;
+}
+
+.vacation-days div {
+  padding: 10px 0px;
+}
+
+.win-trip {
+  padding: 100px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.win-trip p,
+.win-trip h2 {
+  color: #0D457F;
+}
+
+.lady-column {
+  width: 35%;
+  padding: 40px;
+}
+
+.lady-column img {
+  -webkit-box-shadow: -20px 20px #FDD908;
+          box-shadow: -20px 20px #FDD908;
+}
+
+.lifetime-column {
+  width: 65%;
+  padding: 20px;
+}
+
+.lifetime-column div {
+  padding-bottom: 15px;
+}
+
+.gallery-photos {
+  background-color: #0D457F;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0px;
+}
+
+.gallery-photos div {
+  margin: 20px;
+  width: calc(100%/3 - 120px);
 }
 
 .contact-hero {

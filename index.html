@@ -1,45 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Boat Ride Adventures - home page -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boat Ride Adventures</title>
     <!-- importing Google fonts: IM_FELL_ENGLISH and Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- linking to an external stylesheet -->
-    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
-
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
     <!-- linking to fontawesome icons -->
     <script src="https://kit.fontawesome.com/0a20410b2e.js" crossorigin="anonymous"></script>
+    <title>Boat Ride Adventures</title>
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="wrapper">
+        <div class="home-hero">
             <div>
+                <img src="assets/home-header.jpg">
+            </div>
+            <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="./index.html">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                     <li><i class="fas fa-bars" aria-label="menu"></i></li>
                 </ul>
+            </nav>
+            <div class="home-hero-text">
+                <h1>boat ride adventures</h1>
             </div>
-        </nav>
-        <h1>is this yellow or no</h1>
+
+        </div>
 
     </header>
     <main>
 
 
+        <section class="wrapper four-points">
+            <div class="flex-row">
+                <div class="flex-point">
+                    <div>
+                        <h2>new destinations</h2>
+                    </div>
+                    <div>
+                        <p>ut felis eros, vehicula eu magna nex, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat. </p>
+                    </div>
+                </div>
+                <div class="flex-point">
+                    <div>
+                        <h2>community</h2>
+                    </div>
+                    <div>
+                        <p>ut felis eros, vehicula eu magna nex, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="flex-point">
+                    <div>
+                        <h2>blog</h2>
+                    </div>
+                    <div>
+                        <p>ut felis eros, vehicula eu magna nex, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat. </p>
+                    </div>
+                </div>
+                <div class="flex-point">
+                    <div>
+                        <h2>get in touch</h2>
+                    </div>
+                    <div>
+                        <p>ut felis eros, vehicula eu magna nex, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wrapper vacation-days flex-column">
+            <div>
+                <h2>
+                    extra vacation days?
+                </h2>
+
+            </div>
+            <div>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis neque repudiandae architecto corrupti, dolor ipsam qui et a iusto iure perferendis minima cumque laboriosam, labore aut quasi quos dignissimos eaque.</p>
+            </div>
+            <div>
+                <button>find out more</button>
+            </div>
+
+        </section>
+
+        <section class="wrapper banner-photo">
+            <div>
+                <img src="./assets/banner.jpg" alt="rowboats, a calm blue lake and tree-covered mountains">
+            </div>
+
+        </section>
+        <section class="wrapper win-trip">
+            <div class="flex-row">
+                <div class="flex-column lady-column">
+                    <img src="./assets/small-box.jpg" alt="long-haired girl with hat looking across at hilly terrain across a lake">
+                </div>
+                <div class="flex-column lifetime-column">
+                    <div>
+                        <h2>win trip of a lifetime</h2>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam ea molestias repellat vel nisi eveniet quis, asperiores soluta commodi minima quia sunt? Quam officia consequatur, recusandae quis sunt vitae quia?Ipsum, aliquam
+                            aliquid laboriosam nesciunt laudantium ullam. Quia totam molestias quos corrupti nobis, maiores placeat voluptatem ducimus blanditiis dolore aspernatur. Itaque laboriosam suscipit iste accusamus hic fugit quos exercitationem
+                            enim! </p>
+                    </div>
+                    <div><button>find out more</button></div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- this is a flexed row -->
+        <section class="wrapper gallery-photos flex-row">
+            <div>
+                <img src="./assets/gallery-image-1.jpg" alt="playground slide in front of a building">
+            </div>
+            <div>
+                <img src="./assets/gallery-image-2.jpg" alt="little girl peeking over playground equipment">
+            </div>
+            <div>
+                <img src="./assets/gallery-image-3.jpg" alt="children playing tug of war in an outdoor park">
+            </div>
+
+
+        </section>
 
     </main>
-
-
     <footer class="wrapper">
         <p>Copyright © 2020 Juno College - Created by ashwin alexander at <a href="https://junocollege.com/">Juno College</a> </p>
     </footer>
 </body>
+
 
 </html>

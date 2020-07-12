@@ -34,6 +34,7 @@ h2 {
     font-family: 'IM Fell English', serif;
     font-style: italic;
     font-size: 4.5rem;
+    text-transform: uppercase;
 }
 
 //our program..., new location...
@@ -79,7 +80,7 @@ button {
     background-color: $accent-color;
     color: $primary-color;
     text-transform: uppercase;
-    ;
+    padding: 0px 15px;
 }
 
 a {
@@ -92,12 +93,14 @@ a {
     text-decoration: none;
 }
 
+// resuable flex row
 .flex-row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
+// reusable flex column
 .flex-column {
     display: flex;
     flex-direction: column;
