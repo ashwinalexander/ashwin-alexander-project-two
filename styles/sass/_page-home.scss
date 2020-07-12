@@ -12,8 +12,10 @@
         z-index: 1;
     }
     
+    //the section with four informational points
     .four-points {
         padding: 150px 80px 130px 130px;
+        background-color: lighten ($secondary-color, 5%);
         ul {
             justify-content: space-between;
             li {
@@ -24,13 +26,60 @@
                 color: $primary-color;
             }
             i {
-                position: relative;
                 font-size: 2rem;
-                top: 40px;
-                left: -60px;
-                padding: 10px;
                 border-radius: 50%;
                 background-color: $accent-color;
+                padding: 10px;
+                position: relative;
+                top: 40px;
+                left: -60px;
+            }
+        }
+    }
+    
+    // section with programs and locations
+    .programs-locations {
+        padding: 40px;
+        background-color: $primary-color;
+        ul {
+            justify-content: space-between;
+        }
+        h3 {
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 1.5rem;
+            // padding-bottom: 15px;
+        }
+        h3,
+        p {
+            color: $light-color;
+        }
+        li {
+            width: 45%;
+        }
+        .programs {
+            .yellow-border {
+                box-shadow: 20px 20px $accent-color;
+                position: relative;
+                top: -70px;
+                left: -40px;
+            }
+            .info {
+                text-align: left;
+                justify-content: space-evenly;
+            }
+        }
+        .locations {
+            .yellow-border {
+                box-shadow: -20px 20px $accent-color;
+                position: relative;
+                bottom: -50px;
+                right: -50px;
+            }
+            .info {
+                text-align: right;
+                justify-content: space-evenly;
             }
         }
     }
@@ -39,7 +88,7 @@
     .vacation-days {
         padding: 120px 120px 100px 120px; // slightly more padding on the top
         text-align: center;
-        background-color: $secondary-color;
+        background-color: lighten($secondary-color, 10%);
         h2 {
             color: $primary-color;
         }

@@ -500,6 +500,7 @@ footer a {
 
 .four-points {
   padding: 150px 80px 130px 130px;
+  background-color: lighten #EAFEFC, 5%;
 }
 
 .four-points ul {
@@ -518,19 +519,77 @@ footer a {
 }
 
 .four-points ul i {
-  position: relative;
   font-size: 2rem;
-  top: 40px;
-  left: -60px;
-  padding: 10px;
   border-radius: 50%;
   background-color: #FDD908;
+  padding: 10px;
+  position: relative;
+  top: 40px;
+  left: -60px;
+}
+
+.programs-locations {
+  padding: 40px;
+  background-color: #0D457F;
+}
+
+.programs-locations ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.programs-locations h3 {
+  text-transform: uppercase;
+}
+
+.programs-locations p {
+  font-size: 1.5rem;
+}
+
+.programs-locations h3,
+.programs-locations p {
+  color: #ffffff;
+}
+
+.programs-locations li {
+  width: 45%;
+}
+
+.programs-locations .programs .yellow-border {
+  -webkit-box-shadow: 20px 20px #FDD908;
+          box-shadow: 20px 20px #FDD908;
+  position: relative;
+  top: -70px;
+  left: -40px;
+}
+
+.programs-locations .programs .info {
+  text-align: left;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.programs-locations .locations .yellow-border {
+  -webkit-box-shadow: -20px 20px #FDD908;
+          box-shadow: -20px 20px #FDD908;
+  position: relative;
+  bottom: -50px;
+  right: -50px;
+}
+
+.programs-locations .locations .info {
+  text-align: right;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .vacation-days {
   padding: 120px 120px 100px 120px;
   text-align: center;
-  background-color: #EAFEFC;
+  background-color: white;
 }
 
 .vacation-days h2 {
