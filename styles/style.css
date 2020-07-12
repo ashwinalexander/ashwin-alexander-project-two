@@ -499,35 +499,32 @@ footer a {
 }
 
 .four-points {
-  padding: 150px 80px 130px 50px;
+  padding: 150px 80px 130px 130px;
 }
 
-.four-points .flex-row div {
-  width: 50%;
+.four-points ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.four-points .flex-row .flex-point {
-  margin: 0px;
-  padding: 10px 10px 10px 20px;
+.four-points ul li {
+  width: 45%;
 }
 
-.four-points .flex-row .flex-point p {
-  padding: 0px;
+.four-points ul h2,
+.four-points ul p {
   color: #0D457F;
 }
 
-.four-points .flex-row .flex-point h2 {
-  padding: 5px;
-  color: #0D457F;
-}
-
-.four-points .flex-row .flex-point h2::before {
-  content: 'dd';
-  padding-left: 5px;
-}
-
-.four-points .flex-row .flex-point div {
-  width: 100%;
+.four-points ul i {
+  position: relative;
+  font-size: 2rem;
+  top: 40px;
+  left: -60px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #FDD908;
 }
 
 .vacation-days {
