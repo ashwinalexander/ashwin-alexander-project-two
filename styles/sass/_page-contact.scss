@@ -5,37 +5,49 @@
     //h1 text within the hero image
     .contact-hero-text {
         position: absolute;
-        top: 150px;
+        top: 100px;
         left: 30px;
         color: $light-color;
+        z-index: 1;
     }
     
     //section below header 
     .contact-section {
         display: flex;
         flex-direction: row;
-        padding: 80px 0px 100px 50px;
+        padding: 80px 0px 0px 50px;
     }
     
     //parent container of the form
     .contact-form {
         background-color: $primary-color;
-        box-shadow: 10px 10px $accent-color;
-        padding: 20px;
+        box-shadow: 20px 20px $accent-color;
+        padding: 30px;
         width: 70%;
+        //offseting the position of the form
+        position: relative;
+        top: -180px;
+        left: -40px;
+        div {
+            padding-bottom: 30px;
+        }
+        .flex-row {
+            justify-content: center;
+        }
+        button {
+            width: 90%;
+        }
     }
     
     //flexed parent container of the social icons and contact info
     .contact-social-address {
+        justify-content: space-between;
         width: 30%;
-        // margin: 80px 0px 50px 40px;
         p {
             color: $primary-color;
         }
-        justify-content: space-between;
-        ;
         div {
-            padding-bottom: 10px;
+            padding-bottom: 15px;
         }
     }
     
@@ -47,4 +59,28 @@
         li {
             padding: 10px 20px 10px 0px;
         }
+    }
+    
+    .application-form {
+        text-align: center;
+    }
+    
+    input[type=text],
+    input[type=email] {
+        padding: 0px 0px 10px 10px;
+        background-color: $primary-color;
+        border: none;
+        border-bottom: 2px $accent-color solid;
+        color: $light-color;
+        width: 45%;
+        margin: 5px;
+    }
+    
+    textarea {
+        background-color: $primary-color;
+        color: $light-color;
+        border: 2px $accent-color solid;
+        resize: none;
+        padding: 15px;
+        width: 90%;
     }

@@ -55,6 +55,9 @@ h4 {
 }
 
 //body text
+input[type=text],
+input[type=email],
+textarea,
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
@@ -75,6 +78,8 @@ button {
     text-align: center;
     background-color: $accent-color;
     color: $primary-color;
+    text-transform: uppercase;
+    ;
 }
 
 a {

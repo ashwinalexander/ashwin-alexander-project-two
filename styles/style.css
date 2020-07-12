@@ -409,6 +409,9 @@ h4 {
   letter-spacing: 0.08rem;
 }
 
+input[type=text],
+input[type=email],
+textarea,
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 1.8rem;
@@ -429,6 +432,7 @@ button {
   text-align: center;
   background-color: #FDD908;
   color: #0D457F;
+  text-transform: uppercase;
 }
 
 a {
@@ -486,9 +490,10 @@ footer a {
 
 .contact-hero-text {
   position: absolute;
-  top: 150px;
+  top: 100px;
   left: 30px;
   color: #ffffff;
+  z-index: 1;
 }
 
 .contact-section {
@@ -499,22 +504,39 @@ footer a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 80px 0px 100px 50px;
+  padding: 80px 0px 0px 50px;
 }
 
 .contact-form {
   background-color: #0D457F;
-  -webkit-box-shadow: 10px 10px #FDD908;
-          box-shadow: 10px 10px #FDD908;
-  padding: 20px;
+  -webkit-box-shadow: 20px 20px #FDD908;
+          box-shadow: 20px 20px #FDD908;
+  padding: 30px;
   width: 70%;
+  position: relative;
+  top: -180px;
+  left: -40px;
+}
+
+.contact-form div {
+  padding-bottom: 30px;
+}
+
+.contact-form .flex-row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-form button {
+  width: 90%;
 }
 
 .contact-social-address {
-  width: 30%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 30%;
 }
 
 .contact-social-address p {
@@ -522,7 +544,7 @@ footer a {
 }
 
 .contact-social-address div {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .social-icons a {
@@ -531,4 +553,28 @@ footer a {
 
 .social-icons li {
   padding: 10px 20px 10px 0px;
+}
+
+.application-form {
+  text-align: center;
+}
+
+input[type=text],
+input[type=email] {
+  padding: 0px 0px 10px 10px;
+  background-color: #0D457F;
+  border: none;
+  border-bottom: 2px #FDD908 solid;
+  color: #ffffff;
+  width: 45%;
+  margin: 5px;
+}
+
+textarea {
+  background-color: #0D457F;
+  color: #ffffff;
+  border: 2px #FDD908 solid;
+  resize: none;
+  padding: 15px;
+  width: 90%;
 }
