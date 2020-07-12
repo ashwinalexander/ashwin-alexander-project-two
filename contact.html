@@ -37,10 +37,12 @@
 
     </header>
     <main>
-        <section class="wrapper contact-details">
-            <!-- <div class="contact-social-address flexrow">
+        <!-- this is a flexed row -->
+        <section class="wrapper contact-section">
+            <!-- this is flexed column #1 -->
+            <div class="contact-social-address flex-column">
                 <div class="social-icons">
-                    <ul class="flexrow">
+                    <ul class="flex-row">
                         <li>
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                         </li>
@@ -53,8 +55,6 @@
                             <a href="#"><i class="fab fa-whatsapp"></i></a>
                         </li>
                     </ul>
-
-
                 </div>
                 <div>
                     <p>info@email.com</p>
@@ -66,20 +66,18 @@
                     <p>M5V2D5</p>
                 </div>
             </div>
-             <div class="contact-form">
-                <form>
-                    <input type="text"><input type="email">
+            <!-- this is flex column #2 -->
+            <div class="contact-form">
+                <form action="#" method="POST" class="application-form flex-column" autocomplete="on" name="submissionForm">
+                    <div> <input type="text" name="textbox-name" required="true" placeholder="Name">
+                        <input type="email" name="textbox-email" required="true" placeholder="Email address"></div>
+                    <div><textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea></div>
+                    <div> <button>Submit</button></div>
 
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
                 </form>
 
-            </div> -->
-            <div class="blah flexrow">
-                <div>adadad</div>
-                <div>adad</div>
-                <div>adad</div>
-                <div>adadeeeeeada</div>
             </div>
+
 
 
         </section>

@@ -6,16 +6,14 @@
                         display: flex;
                         li {
                             padding: 2px;
-                            a {
-                                 :hover {
-                                    &::after {
-                                        content: "";
-                                        display: block;
-                                        margin: 0 auto;
-                                        width: 60%;
-                                        padding-bottom: 0px;
-                                        border-bottom: solid yellow 2px;
-                                    }
+                            a:hover {
+                                &::after {
+                                    content: "";
+                                    display: block;
+                                    margin: 0 auto;
+                                    width: 60%;
+                                    padding-bottom: 0px;
+                                    border-bottom: solid yellow 2px;
                                 }
                             }
                         }

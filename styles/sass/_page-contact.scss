@@ -1,28 +1,50 @@
-.contact-hero {
-    position: relative;
-}
-
-.contact-hero-text {
-    position: absolute;
-    top: 150px;
-    left: 30px;
-    // color: $light-color;
-    color: yellow;
-}
-
-.flexrow {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-}
-
-.contact-details {
-    border: 2px dotted red;
-}
-
-.blah {
-    width: 100%;
-    border: solid 10px dotted;
-    margin: 20px;
-    padding: 20px;
-}
+    .contact-hero {
+        position: relative;
+    }
+    
+    //h1 text within the hero image
+    .contact-hero-text {
+        position: absolute;
+        top: 150px;
+        left: 30px;
+        color: $light-color;
+    }
+    
+    //section below header 
+    .contact-section {
+        display: flex;
+        flex-direction: row;
+        padding: 80px 0px 100px 50px;
+    }
+    
+    //parent container of the form
+    .contact-form {
+        background-color: $primary-color;
+        box-shadow: 10px 10px $accent-color;
+        padding: 20px;
+        width: 70%;
+    }
+    
+    //flexed parent container of the social icons and contact info
+    .contact-social-address {
+        width: 30%;
+        // margin: 80px 0px 50px 40px;
+        p {
+            color: $primary-color;
+        }
+        justify-content: space-between;
+        ;
+        div {
+            padding-bottom: 10px;
+        }
+    }
+    
+    //flexed container for social icons
+    .social-icons {
+        a {
+            padding: 0px;
+        }
+        li {
+            padding: 10px 20px 10px 0px;
+        }
+    }

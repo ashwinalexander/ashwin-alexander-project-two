@@ -3,7 +3,7 @@ $primary-color: #0D457F;
 $secondary-color: #EAFEFC;
 $accent-color: #FDD908;
 $light-color: #ffffff;
-//typography and initial setup
+//typography and other reusable classes
 html {
     font-size: 62.5%;
 }
@@ -57,13 +57,13 @@ h4 {
 //body text
 p {
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 2.8rem;
     letter-spacing: .01rem;
 }
 
 i {
-    font-size: 3rem;
+    font-size: 2.2rem;
     color: $primary-color;
 }
 
@@ -79,10 +79,22 @@ button {
 
 a {
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 2.9rem;
     letter-spacing: .01rem;
     padding: 0px 20px;
     color: $light-color;
     text-decoration: none;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
