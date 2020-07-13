@@ -702,6 +702,10 @@ header .hero-image-insert {
   padding: 10px 70px;
 }
 
+.blog-section .comment-section h3 {
+  padding-bottom: 20px;
+}
+
 .blog-section .comment-section .flex-row {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
@@ -718,6 +722,46 @@ header .hero-image-insert {
 .blog-section .comment-section .flex-column {
   -ms-flex-line-pack: justify;
       align-content: space-between;
+}
+
+.blog-section .blog-form {
+  padding: 30px;
+}
+
+.blog-section .blog-form div {
+  padding-bottom: 30px;
+}
+
+.blog-section .blog-form .flex-row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.blog-section .blog-form button {
+  width: 90%;
+  color: #FDD908;
+  background-color: #0D457F;
+}
+
+.blog-section .blog-form input[type=text],
+.blog-section .blog-form input[type=email] {
+  padding: 0px 0px 10px 10px;
+  background-color: white;
+  border: none;
+  border-bottom: 2px #FDD908 solid;
+  color: #0D457F;
+  width: 45%;
+  margin: 5px;
+}
+
+.blog-section .blog-form textarea {
+  background-color: #ffffff;
+  color: #0D457F;
+  border: 2px #FDD908 solid;
+  resize: none;
+  padding: 15px;
+  width: 90%;
 }
 
 .contact-hero {
