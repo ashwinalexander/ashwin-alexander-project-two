@@ -640,8 +640,11 @@ header .hero-image-insert {
   padding-bottom: 15px;
 }
 
-.gallery-photos {
+.gallery {
   background-color: #0D457F;
+}
+
+.gallery-photos {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

@@ -133,9 +133,12 @@
         }
     }
     
-    //photo gallery 
-    .gallery-photos {
+    //gallery section 
+    .gallery {
         background-color: $primary-color;
+    }
+    
+    .gallery-photos {
         justify-content: center;
         padding: 20px 0px;
         div {
