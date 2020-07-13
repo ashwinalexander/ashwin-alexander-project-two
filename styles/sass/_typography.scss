@@ -44,6 +44,7 @@ h3 {
     font-size: 4.0rem;
     line-height: 5.8rem;
     letter-spacing: .13rem;
+    text-transform: uppercase;
 }
 
 // side back headings (our miss..., recent...)
@@ -91,6 +92,7 @@ a {
     padding: 0px 20px;
     color: $light-color;
     text-decoration: none;
+    display: inline-block;
 }
 
 // resuable flex row

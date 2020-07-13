@@ -400,6 +400,7 @@ h3 {
   font-size: 4.0rem;
   line-height: 5.8rem;
   letter-spacing: .13rem;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -445,6 +446,7 @@ a {
   padding: 0px 20px;
   color: #ffffff;
   text-decoration: none;
+  display: inline-block;
 }
 
 .flex-row {
@@ -649,6 +651,73 @@ header .hero-image-insert {
 .gallery-photos div {
   margin: 20px;
   width: calc(100%/3 - 120px);
+}
+
+.blog-hero {
+  position: relative;
+}
+
+.blog-hero-text {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.blog-section .blog-sidebar {
+  width: 30%;
+}
+
+.blog-section .title-font {
+  font-weight: 800;
+}
+
+.blog-section .blog-article {
+  width: calc(70%);
+  position: relative;
+  top: -80px;
+}
+
+.blog-section .blog-article .blog-content {
+  padding: 0px 70px 70px 70px;
+  border: 2px solid #FDD908;
+}
+
+.blog-section .blog-article .blog-content p {
+  padding-bottom: 20px;
+}
+
+.blog-section .blog-article .blog-image {
+  -webkit-box-shadow: -20px 20px #FDD908;
+          box-shadow: -20px 20px #FDD908;
+}
+
+.blog-section .blog-article h3 {
+  padding-top: 40px;
+  color: #0D457F;
+}
+
+.blog-section .comment-section {
+  padding: 10px 70px;
+}
+
+.blog-section .comment-section .flex-row {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 20px;
+}
+
+.blog-section .comment-section .flex-row .comment {
+  padding: 0px 20px;
+}
+
+.blog-section .comment-section .flex-column {
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
 }
 
 .contact-hero {
