@@ -665,16 +665,47 @@ header .hero-image-insert {
   z-index: 1;
 }
 
-.blog-section .blog-sidebar {
-  width: 30%;
-}
-
 .blog-section .title-font {
   font-weight: 800;
 }
 
+.blog-section .blog-sidebar {
+  width: 35%;
+  padding: 120px 40px;
+}
+
+.blog-section .blog-sidebar .sidebar-content {
+  padding: 25px;
+  background-color: #0D457F;
+}
+
+.blog-section .blog-sidebar .sidebar-content .sidebar-image {
+  width: 110%;
+  position: relative;
+  top: -40px;
+  left: -65px;
+}
+
+.blog-section .blog-sidebar .sidebar-content h4 {
+  color: #FDD908;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+.blog-section .blog-sidebar .sidebar-content ul {
+  list-style-type: circle;
+}
+
+.blog-section .blog-sidebar .sidebar-content ul li {
+  color: #ffffff;
+}
+
+.blog-section .blog-sidebar .sidebar-content p {
+  color: #ffffff;
+}
+
 .blog-section .blog-article {
-  width: calc(70%);
+  width: calc(65%);
   position: relative;
   top: -80px;
 }

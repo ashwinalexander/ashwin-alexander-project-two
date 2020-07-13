@@ -12,14 +12,39 @@
 }
 
 .blog-section {
-    .blog-sidebar {
-        width: 30%;
-    }
     .title-font {
         font-weight: 800;
     }
+    .blog-sidebar {
+        width: 35%;
+        padding: 120px 40px;
+        .sidebar-content {
+            padding: 25px;
+            background-color: $primary-color;
+            .sidebar-image {
+                width: 110%;
+                position: relative;
+                top: -40px;
+                left: -65px;
+            }
+            h4 {
+                color: $accent-color;
+                text-transform: uppercase;
+                padding-top: 10px;
+            }
+            ul {
+                list-style-type: circle;
+                li {
+                    color: $light-color;
+                }
+            }
+            p {
+                color: $light-color
+            }
+        }
+    }
     .blog-article {
-        width: calc(70%);
+        width: calc(65%);
         position: relative;
         top: -80px;
         .blog-content {
