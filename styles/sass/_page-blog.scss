@@ -40,7 +40,7 @@
                 }
             }
             p {
-                color: $light-color
+                color: $light-color;
             }
         }
     }
@@ -53,6 +53,7 @@
             border: 2px solid $accent-color;
             p {
                 padding-bottom: 20px;
+                color: $primary-color;
             }
         }
         .blog-image {
@@ -67,6 +68,9 @@
         padding: 10px 70px;
         h3 {
             padding-bottom: 20px;
+        }
+        p {
+            color: $primary-color;
         }
         .flex-row {
             flex-wrap: nowrap;
@@ -117,20 +121,36 @@
 }
 
 // media queries for the Blog page
-@media (max-width: 1080px) {}
-
-@media (max-width: 960px) {
+@media (max-width: 1020px) {
     .blog-hero {
         height: 40vh;
-        nav ul {
-            justify-content: center;
-            a {
-                font-size: 2.3rem;
-            }
-        }
         h1 {
             text-align: center;
             margin: 0px;
+        }
+    }
+    .sidebar-mission {
+        h4 {
+            font-size: 2.0rem;
+            line-height: 2.5rem;
+            padding-bottom: 2px;
+        }
+        p {
+            font-size: 1.4rem;
+            line-height: 2.3rem;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .blog-sidebar {
+        display: none;
+    }
+    .blog-section {
+        .blog-article {
+            width: 90%;
+            padding: 0px;
+            margin: 0 auto;
         }
     }
 }
@@ -158,12 +178,53 @@
             font-size: 5rem;
         }
     }
+    .blog-section {
+        .comment-section,
+        .blog-article {
+            h3 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: 1.6rem;
+                line-height: 2rem;
+            }
+        }
+    }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     .blog-hero {
         h1 {
             font-size: 4rem;
+        }
+    }
+    .blog-article {
+        .blog-image {
+            display: none;
+        }
+        .blog-content {
+            margin-top: 90px;
+            h3 {
+                font-size: 2rem;
+                line-height: 2.8rem;
+            }
+            p {
+                font-size: 1.5rem;
+                line-height: 2.2rem;
+            }
+        }
+        .blog-form {
+            .flex-row {
+                flex-direction: column;
+            }
+            input[type=text],
+            input[type=email],
+            textarea {
+                width: 90%;
+            }
+             ::placeholder {
+                font-size: 1.5rem;
+            }
         }
     }
 }
@@ -172,6 +233,14 @@
     .blog-hero {
         h1 {
             font-size: 3rem;
+        }
+    }
+    .blog-section {
+        .blog-article {
+            .blog-content {
+                padding: 0px;
+                border: 0px;
+            }
         }
     }
     .blog-footer {

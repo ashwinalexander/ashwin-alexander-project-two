@@ -755,6 +755,7 @@ header .hero-image-insert {
 
 .blog-section .blog-article .blog-content p {
   padding-bottom: 20px;
+  color: #0D457F;
 }
 
 .blog-section .blog-article .blog-image {
@@ -773,6 +774,10 @@ header .hero-image-insert {
 
 .blog-section .comment-section h3 {
   padding-bottom: 20px;
+}
+
+.blog-section .comment-section p {
+  color: #0D457F;
 }
 
 .blog-section .comment-section .flex-row {
@@ -833,21 +838,33 @@ header .hero-image-insert {
   width: 90%;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1020px) {
   .blog-hero {
     height: 40vh;
-  }
-  .blog-hero nav ul {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .blog-hero nav ul a {
-    font-size: 2.3rem;
   }
   .blog-hero h1 {
     text-align: center;
     margin: 0px;
+  }
+  .sidebar-mission h4 {
+    font-size: 2.0rem;
+    line-height: 2.5rem;
+    padding-bottom: 2px;
+  }
+  .sidebar-mission p {
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .blog-sidebar {
+    display: none;
+  }
+  .blog-section .blog-article {
+    width: 90%;
+    padding: 0px;
+    margin: 0 auto;
   }
 }
 
@@ -870,17 +887,67 @@ header .hero-image-insert {
   .blog-hero h1 {
     font-size: 5rem;
   }
+  .blog-section .comment-section h3,
+  .blog-section .blog-article h3 {
+    font-size: 3rem;
+  }
+  .blog-section .comment-section p,
+  .blog-section .blog-article p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .blog-hero h1 {
     font-size: 4rem;
+  }
+  .blog-article .blog-image {
+    display: none;
+  }
+  .blog-article .blog-content {
+    margin-top: 90px;
+  }
+  .blog-article .blog-content h3 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+  .blog-article .blog-content p {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+  .blog-article .blog-form .flex-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-article .blog-form input[type=text],
+  .blog-article .blog-form input[type=email],
+  .blog-article .blog-form textarea {
+    width: 90%;
+  }
+  .blog-article .blog-form ::-webkit-input-placeholder {
+    font-size: 1.5rem;
+  }
+  .blog-article .blog-form :-ms-input-placeholder {
+    font-size: 1.5rem;
+  }
+  .blog-article .blog-form ::-ms-input-placeholder {
+    font-size: 1.5rem;
+  }
+  .blog-article .blog-form ::placeholder {
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 400px) {
   .blog-hero h1 {
     font-size: 3rem;
+  }
+  .blog-section .blog-article .blog-content {
+    padding: 0px;
+    border: 0px;
   }
   .blog-footer p,
   .blog-footer a {
