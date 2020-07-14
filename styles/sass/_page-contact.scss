@@ -1,3 +1,6 @@
+       /////////////////////////////////////////////////////////
+       ////////////// styles for the Contact  page    ////////////
+       ////////////////////////////////////////////////////////
        .contact-hero {
            height: 50vh;
            background: url("../assets/contact-header.jpg") no-repeat center;
@@ -83,7 +86,7 @@
            width: 90%;
        }
        
-       // media queries for the contact us page
+       // media queries for the Contact page
        @media (max-width: 1080px) {
            .contact-social-address {
                p,
@@ -97,12 +100,6 @@
        @media (max-width: 960px) {
            .contact-hero {
                height: 40vh;
-               nav ul {
-                   justify-content: center;
-                   a {
-                       font-size: 2.3rem;
-                   }
-               }
                h1 {
                    text-align: center;
                    margin: 0px;
@@ -146,21 +143,6 @@
                a {
                    font-size: 1.2rem;
                    line-height: 1.3rem;
-               }
-           }
-           nav {
-               ul {
-                   li {
-                       flex: 1 0 auto;
-                       a {
-                           display: none;
-                       }
-                       i {
-                           font-size: 3rem;
-                           color: $light-color;
-                           visibility: visible;
-                       }
-                   }
                }
            }
        }

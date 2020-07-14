@@ -1,24 +1,54 @@
-                nav {
-                    margin: 40px 40px 40px 40px;
-                    text-align: center;
-                    ul {
-                        display: flex;
-                        flex-direction: row;
-                        li {
-                            padding: 2px;
-                            a:hover {
-                                &::after {
-                                    content: "";
-                                    display: block;
-                                    margin: 0 auto;
-                                    width: 60%;
-                                    padding-bottom: 0px;
-                                    border-bottom: solid yellow 2px;
-                                }
-                            }
-                            i {
-                                visibility: hidden;
-                            }
-                        }
-                    }
-                }
+ nav {
+     margin: 40px 40px 40px 40px;
+     text-align: center;
+     ul {
+         display: flex;
+         flex-direction: row;
+         li {
+             padding: 2px;
+             a:hover {
+                 &::after {
+                     content: "";
+                     display: block;
+                     margin: 0 auto;
+                     width: 60%;
+                     padding-bottom: 0px;
+                     border-bottom: solid yellow 2px;
+                 }
+             }
+             i {
+                 visibility: hidden;
+             }
+         }
+     }
+ }
+ 
+ @media (max-width: 960px) {
+     nav {
+         ul {
+             justify-content: center;
+             a {
+                 font-size: 2.3rem;
+             }
+         }
+     }
+ }
+ 
+ @media (max-width: 780px) {
+     nav {
+         ul {
+             li {
+                 flex: 1 0 auto;
+                 a {
+                     display: none;
+                 }
+                 i {
+                     font-size: 3rem;
+                     color: $light-color;
+                     visibility: visible;
+                     display: none;
+                 }
+             }
+         }
+     }
+ }

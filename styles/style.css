@@ -370,6 +370,33 @@ nav ul li i {
   visibility: hidden;
 }
 
+@media (max-width: 960px) {
+  nav ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav ul a {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 780px) {
+  nav ul li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+  }
+  nav ul li a {
+    display: none;
+  }
+  nav ul li i {
+    font-size: 3rem;
+    color: pink;
+    visibility: visible;
+  }
+}
+
 html {
   font-size: 62.5%;
 }
@@ -664,15 +691,15 @@ header .hero-image-insert {
 }
 
 .blog-hero {
-  position: relative;
+  height: 50vh;
+  background: url("../assets/blog-header.jpg") no-repeat center;
+  background-size: cover;
 }
 
-.blog-hero-text {
-  position: absolute;
-  top: 100px;
-  left: 30px;
+.blog-hero h1 {
+  margin-left: 50px;
+  margin-top: 80px;
   color: #ffffff;
-  z-index: 1;
 }
 
 .blog-section .title-font {
@@ -805,6 +832,103 @@ header .hero-image-insert {
   width: 90%;
 }
 
+@media (max-width: 960px) {
+  .blog-hero {
+    height: 40vh;
+  }
+  .blog-hero nav ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .blog-hero nav ul a {
+    font-size: 2.3rem;
+  }
+  .blog-hero h1 {
+    text-align: center;
+    margin: 0px;
+  }
+}
+
+@media (max-width: 780px) {
+  .blog-hero h1 {
+    font-size: 7rem;
+    margin-top: 90px;
+  }
+  .blog-hero nav ul li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+  }
+  .blog-hero nav ul li a {
+    display: none;
+  }
+  .blog-hero nav ul li i {
+    font-size: 3rem;
+    color: #ffffff;
+    visibility: visible;
+  }
+  .blog-footer p,
+  .blog-footer a {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .contact-hero {
+    height: 30vh;
+  }
+  .contact-hero h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-hero h1 {
+    font-size: 4rem;
+  }
+  .contact-section .contact-form .flex-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-section .contact-form input[type=text],
+  .contact-section .contact-form input[type=email],
+  .contact-section .contact-form textarea {
+    width: 90%;
+  }
+  .contact-section .contact-form ::-webkit-input-placeholder {
+    font-size: 1.5rem;
+  }
+  .contact-section .contact-form :-ms-input-placeholder {
+    font-size: 1.5rem;
+  }
+  .contact-section .contact-form ::-ms-input-placeholder {
+    font-size: 1.5rem;
+  }
+  .contact-section .contact-form ::placeholder {
+    font-size: 1.5rem;
+  }
+  .contact-section .contact-social-address p,
+  .contact-section .contact-social-address i {
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-hero h1 {
+    font-size: 3rem;
+  }
+  .contact-footer p,
+  .contact-footer a {
+    font-size: 1.0rem;
+    line-height: 1.2rem;
+  }
+}
+
 .contact-hero {
   height: 50vh;
   background: url("../assets/contact-header.jpg") no-repeat center;
@@ -912,14 +1036,6 @@ textarea {
   .contact-hero {
     height: 40vh;
   }
-  .contact-hero nav ul {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .contact-hero nav ul a {
-    font-size: 2.3rem;
-  }
   .contact-hero h1 {
     text-align: center;
     margin: 0px;
@@ -969,19 +1085,6 @@ textarea {
   .contact-footer a {
     font-size: 1.2rem;
     line-height: 1.3rem;
-  }
-  nav ul li {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 auto;
-            flex: 1 0 auto;
-  }
-  nav ul li a {
-    display: none;
-  }
-  nav ul li i {
-    font-size: 3rem;
-    color: #ffffff;
-    visibility: visible;
   }
 }
 

@@ -1,14 +1,15 @@
+/////////////////////////////////////////////////////////
+////////////// styles for the Blog  page    ////////////
+////////////////////////////////////////////////////////
 .blog-hero {
-    position: relative;
-}
-
-//h1 text within the hero image
-.blog-hero-text {
-    position: absolute;
-    top: 100px;
-    left: 30px;
-    color: $light-color;
-    z-index: 1;
+    height: 50vh;
+    background: url("../assets/blog-header.jpg") no-repeat center;
+    background-size: cover;
+    h1 {
+        margin-left: 50px;
+        margin-top: 80px;
+        color: $light-color;
+    }
 }
 
 .blog-section {
@@ -112,6 +113,118 @@
             resize: none;
             padding: 15px;
             width: 90%;
+        }
+    }
+}
+
+// media queries for the Blog page
+@media (max-width: 1080px) {
+    // .contact-social-address {
+    //     p,
+    //     i {
+    //         font-size: 1.6rem;
+    //         line-height: 2rem;
+    //     }
+    // }
+}
+
+@media (max-width: 960px) {
+    .blog-hero {
+        height: 40vh;
+        nav ul {
+            justify-content: center;
+            a {
+                font-size: 2.3rem;
+            }
+        }
+        h1 {
+            text-align: center;
+            margin: 0px;
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    .blog-hero {
+        h1 {
+            font-size: 7rem;
+            margin-top: 90px;
+        }
+        nav {
+            ul {
+                li {
+                    flex: 1 0 auto;
+                    a {
+                        display: none;
+                    }
+                    i {
+                        font-size: 3rem;
+                        color: $light-color;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+    .blog-footer {
+        p,
+        a {
+            font-size: 1.2rem;
+            line-height: 1.3rem;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .contact-hero {
+        height: 30vh;
+        h1 {
+            font-size: 5rem;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-hero {
+        h1 {
+            font-size: 4rem;
+        }
+    }
+    .contact-section {
+        .contact-form {
+            .flex-row {
+                flex-direction: column;
+            }
+            input[type=text],
+            input[type=email],
+            textarea {
+                width: 90%;
+            }
+             ::placeholder {
+                font-size: 1.5rem;
+            }
+        }
+        .contact-social-address {
+            p,
+            i {
+                font-size: 1.7rem;
+                line-height: 1.7rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .contact-hero {
+        h1 {
+            font-size: 3rem;
+        }
+    }
+    .contact-footer {
+        p,
+        a {
+            font-size: 1.0rem;
+            line-height: 1.2rem;
         }
     }
 }
