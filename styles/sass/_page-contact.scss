@@ -1,4 +1,4 @@
-       header {
+       .contact-hero {
            height: 50vh;
            background: url("../assets/contact-header.jpg") no-repeat center;
            background-size: cover;
@@ -95,7 +95,7 @@
        }
        
        @media (max-width: 960px) {
-           header {
+           .contact-hero {
                height: 40vh;
                nav ul {
                    justify-content: center;
@@ -135,13 +135,13 @@
        }
        
        @media (max-width: 780px) {
-           header {
+           .contact-hero {
                h1 {
                    font-size: 7rem;
                    margin-top: 90px;
                }
            }
-           footer {
+           .contact-footer {
                p,
                a {
                    font-size: 1.2rem;
@@ -166,7 +166,7 @@
        }
        
        @media (max-width: 650px) {
-           header {
+           .contact-hero {
                height: 30vh;
                h1 {
                    font-size: 5rem;
@@ -175,7 +175,7 @@
        }
        
        @media (max-width: 500px) {
-           header {
+           .contact-hero {
                h1 {
                    font-size: 4rem;
                }
@@ -205,12 +205,12 @@
        }
        
        @media (max-width: 400px) {
-           header {
+           .contact-hero {
                h1 {
                    font-size: 3rem;
                }
            }
-           footer {
+           .contact-footer {
                p,
                a {
                    font-size: 1.0rem;

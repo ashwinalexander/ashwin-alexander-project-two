@@ -805,13 +805,13 @@ header .hero-image-insert {
   width: 90%;
 }
 
-header {
+.contact-hero {
   height: 50vh;
   background: url("../assets/contact-header.jpg") no-repeat center;
   background-size: cover;
 }
 
-header h1 {
+.contact-hero h1 {
   margin-left: 50px;
   margin-top: 80px;
   color: #ffffff;
@@ -909,18 +909,18 @@ textarea {
 }
 
 @media (max-width: 960px) {
-  header {
+  .contact-hero {
     height: 40vh;
   }
-  header nav ul {
+  .contact-hero nav ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  header nav ul a {
+  .contact-hero nav ul a {
     font-size: 2.3rem;
   }
-  header h1 {
+  .contact-hero h1 {
     text-align: center;
     margin: 0px;
   }
@@ -961,12 +961,12 @@ textarea {
 }
 
 @media (max-width: 780px) {
-  header h1 {
+  .contact-hero h1 {
     font-size: 7rem;
     margin-top: 90px;
   }
-  footer p,
-  footer a {
+  .contact-footer p,
+  .contact-footer a {
     font-size: 1.2rem;
     line-height: 1.3rem;
   }
@@ -986,16 +986,16 @@ textarea {
 }
 
 @media (max-width: 650px) {
-  header {
+  .contact-hero {
     height: 30vh;
   }
-  header h1 {
+  .contact-hero h1 {
     font-size: 5rem;
   }
 }
 
 @media (max-width: 500px) {
-  header h1 {
+  .contact-hero h1 {
     font-size: 4rem;
   }
   .contact-section .contact-form .flex-row {
@@ -1029,11 +1029,11 @@ textarea {
 }
 
 @media (max-width: 400px) {
-  header h1 {
+  .contact-hero h1 {
     font-size: 3rem;
   }
-  footer p,
-  footer a {
+  .contact-footer p,
+  .contact-footer a {
     font-size: 1.0rem;
     line-height: 1.2rem;
   }
