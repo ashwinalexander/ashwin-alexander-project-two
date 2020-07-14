@@ -338,65 +338,6 @@ textarea {
   overflow: hidden;
 }
 
-nav {
-  margin: 40px 40px 40px 40px;
-  text-align: center;
-}
-
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-nav ul li {
-  padding: 2px;
-}
-
-nav ul li a:hover::after {
-  content: "";
-  display: block;
-  margin: 0 auto;
-  width: 60%;
-  padding-bottom: 0px;
-  border-bottom: solid yellow 2px;
-}
-
-nav ul li i {
-  visibility: hidden;
-}
-
-@media (max-width: 960px) {
-  nav ul {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  nav ul a {
-    font-size: 2.3rem;
-  }
-}
-
-@media (max-width: 780px) {
-  nav ul li {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 auto;
-            flex: 1 0 auto;
-  }
-  nav ul li a {
-    display: none;
-  }
-  nav ul li i {
-    font-size: 3rem;
-    color: pink;
-    visibility: visible;
-  }
-}
-
 html {
   font-size: 62.5%;
 }
@@ -520,6 +461,66 @@ footer p {
 footer a {
   color: #0D457F;
   padding: 0px;
+}
+
+nav {
+  margin: 40px 40px 40px 40px;
+  text-align: center;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav ul li {
+  padding: 2px;
+}
+
+nav ul li a:hover::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  padding-bottom: 0px;
+  border-bottom: solid yellow 2px;
+}
+
+nav ul li i {
+  visibility: hidden;
+}
+
+@media (max-width: 960px) {
+  nav ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav ul a {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 780px) {
+  nav ul li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+  }
+  nav ul li a {
+    display: none;
+  }
+  nav ul li i {
+    font-size: 3rem;
+    color: #ffffff;
+    visibility: visible;
+    display: none;
+  }
 }
 
 header .home-hero {
@@ -691,8 +692,8 @@ header .hero-image-insert {
 }
 
 .blog-hero {
-  height: 50vh;
-  background: url("../assets/blog-header.jpg") no-repeat center;
+  height: 60vh;
+  background: url("../assets/blog-header.jpg") no-repeat top;
   background-size: cover;
 }
 
@@ -708,7 +709,7 @@ header .hero-image-insert {
 
 .blog-section .blog-sidebar {
   width: 35%;
-  padding: 120px 40px;
+  padding: 90px 80px 0px 40px;
 }
 
 .blog-section .blog-sidebar .sidebar-content {
@@ -717,7 +718,7 @@ header .hero-image-insert {
 }
 
 .blog-section .blog-sidebar .sidebar-content .sidebar-image {
-  width: 110%;
+  width: 120%;
   position: relative;
   top: -40px;
   left: -65px;
@@ -855,19 +856,6 @@ header .hero-image-insert {
     font-size: 7rem;
     margin-top: 90px;
   }
-  .blog-hero nav ul li {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 auto;
-            flex: 1 0 auto;
-  }
-  .blog-hero nav ul li a {
-    display: none;
-  }
-  .blog-hero nav ul li i {
-    font-size: 3rem;
-    color: #ffffff;
-    visibility: visible;
-  }
   .blog-footer p,
   .blog-footer a {
     font-size: 1.2rem;
@@ -876,54 +864,26 @@ header .hero-image-insert {
 }
 
 @media (max-width: 650px) {
-  .contact-hero {
+  .blog-hero {
     height: 30vh;
   }
-  .contact-hero h1 {
+  .blog-hero h1 {
     font-size: 5rem;
   }
 }
 
 @media (max-width: 500px) {
-  .contact-hero h1 {
+  .blog-hero h1 {
     font-size: 4rem;
-  }
-  .contact-section .contact-form .flex-row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contact-section .contact-form input[type=text],
-  .contact-section .contact-form input[type=email],
-  .contact-section .contact-form textarea {
-    width: 90%;
-  }
-  .contact-section .contact-form ::-webkit-input-placeholder {
-    font-size: 1.5rem;
-  }
-  .contact-section .contact-form :-ms-input-placeholder {
-    font-size: 1.5rem;
-  }
-  .contact-section .contact-form ::-ms-input-placeholder {
-    font-size: 1.5rem;
-  }
-  .contact-section .contact-form ::placeholder {
-    font-size: 1.5rem;
-  }
-  .contact-section .contact-social-address p,
-  .contact-section .contact-social-address i {
-    font-size: 1.7rem;
-    line-height: 1.7rem;
   }
 }
 
 @media (max-width: 400px) {
-  .contact-hero h1 {
+  .blog-hero h1 {
     font-size: 3rem;
   }
-  .contact-footer p,
-  .contact-footer a {
+  .blog-footer p,
+  .blog-footer a {
     font-size: 1.0rem;
     line-height: 1.2rem;
   }
