@@ -706,6 +706,15 @@ nav ul li i {
   width: calc(100%/3 - 60px);
 }
 
+@media (max-width: 1100px) {
+  .four-points li h2 {
+    font-size: 2.5rem;
+  }
+  .four-points li p {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 1060px) {
   .home-hero h1 {
     font-size: 5.5rem;
@@ -720,6 +729,12 @@ nav ul li i {
     text-align: center;
     margin: 0px;
     width: 100%;
+  }
+  .home-hero li h2 {
+    font-size: 2.2rem;
+  }
+  .home-hero li p {
+    font-size: 1.2rem;
   }
   .home-hero .hero-image-insert {
     display: none;
@@ -805,6 +820,21 @@ nav ul li i {
   }
   .lifetime-column p {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .four-points {
+    padding: 40px;
+  }
+  .four-points .flex-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
