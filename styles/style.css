@@ -396,6 +396,22 @@ p {
   letter-spacing: .01rem;
 }
 
+::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  opacity: 1;
+}
+
+::placeholder {
+  opacity: 1;
+}
+
 i {
   font-size: 2.2rem;
   color: #0D457F;
@@ -523,19 +539,20 @@ nav ul li i {
   }
 }
 
-header .home-hero {
-  position: relative;
+.home-hero {
+  height: 70vh;
+  background: url("../assets/home-header.jpg") no-repeat top;
+  background-size: cover;
 }
 
-header .home-hero-text {
-  position: absolute;
-  top: 300px;
-  left: 30px;
+.home-hero h1 {
+  margin-left: 50px;
+  margin-top: 170px;
   color: #FDD908;
-  width: 40%;
+  width: 50%;
 }
 
-header .hero-image-insert {
+.hero-image-insert {
   width: 55%;
   position: absolute;
   top: 150px;
@@ -633,7 +650,7 @@ header .hero-image-insert {
 .vacation-days {
   padding: 120px 120px 100px 120px;
   text-align: center;
-  background-color: white;
+  background-color: #EAFEFC;
 }
 
 .vacation-days h2 {
@@ -683,12 +700,66 @@ header .hero-image-insert {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 20px 0px;
+  padding: 20px 20px;
 }
 
 .gallery-photos div {
-  margin: 20px;
-  width: calc(100%/3 - 120px);
+  margin: 10px;
+  width: calc(100%/3 - 60px);
+}
+
+@media (max-width: 960px) {
+  .home-hero {
+    height: 40vh;
+  }
+  .home-hero h1 {
+    text-align: center;
+    margin: 0px;
+  }
+}
+
+@media (max-width: 780px) {
+  .home-hero h1 {
+    font-size: 7rem;
+    margin-top: 90px;
+  }
+  .gallery-photos {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 0px 0px;
+  }
+  .home-footer p,
+  .home-footer a {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .home-hero {
+    height: 30vh;
+  }
+  .home-hero h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-hero h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .home-hero h1 {
+    font-size: 3rem;
+  }
+  .home-footer p,
+  .home-footer a {
+    font-size: 1.0rem;
+    line-height: 1.2rem;
+  }
 }
 
 .blog-hero {

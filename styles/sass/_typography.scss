@@ -67,6 +67,11 @@ p {
     letter-spacing: .01rem;
 }
 
+//setting opacity so that the form placeholders are clear
+::placeholder {
+    opacity: 1;
+}
+
 i {
     font-size: 2.2rem;
     color: $primary-color;
