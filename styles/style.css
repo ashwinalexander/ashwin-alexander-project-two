@@ -339,15 +339,18 @@ textarea {
 }
 
 nav {
-  position: absolute;
-  top: 20px;
-  left: 30px;
+  margin: 40px 40px 40px 40px;
+  text-align: center;
 }
 
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 nav ul li {
@@ -361,6 +364,10 @@ nav ul li a:hover::after {
   width: 60%;
   padding-bottom: 0px;
   border-bottom: solid yellow 2px;
+}
+
+nav ul li i {
+  visibility: hidden;
 }
 
 html {
@@ -798,16 +805,16 @@ header .hero-image-insert {
   width: 90%;
 }
 
-.contact-hero {
-  position: relative;
+header {
+  height: 50vh;
+  background: url("../assets/contact-header.jpg") no-repeat center;
+  background-size: cover;
 }
 
-.contact-hero-text {
-  position: absolute;
-  top: 100px;
-  left: 30px;
+header h1 {
+  margin-left: 50px;
+  margin-top: 80px;
   color: #ffffff;
-  z-index: 1;
 }
 
 .contact-section {
@@ -828,7 +835,7 @@ header .hero-image-insert {
   padding: 30px;
   width: 70%;
   position: relative;
-  top: -180px;
+  top: -150px;
   left: -40px;
 }
 
@@ -891,4 +898,143 @@ textarea {
   resize: none;
   padding: 15px;
   width: 90%;
+}
+
+@media (max-width: 1080px) {
+  .contact-social-address p,
+  .contact-social-address i {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 960px) {
+  header {
+    height: 40vh;
+  }
+  header nav ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header nav ul a {
+    font-size: 2.3rem;
+  }
+  header h1 {
+    text-align: center;
+    margin: 0px;
+  }
+  .contact-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contact-section .contact-form,
+  .contact-section .contact-social-address {
+    width: 90%;
+  }
+  .contact-section .contact-form {
+    top: -70px;
+    margin: 0px auto;
+  }
+  .contact-section .contact-social-address {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contact-section .contact-social-address p,
+  .contact-section .contact-social-address i {
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+  }
+  .contact-section .contact-social-address .social-icons ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 780px) {
+  header h1 {
+    font-size: 7rem;
+    margin-top: 90px;
+  }
+  footer p,
+  footer a {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+  nav ul li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+  }
+  nav ul li a {
+    display: none;
+  }
+  nav ul li i {
+    font-size: 3rem;
+    color: #ffffff;
+    visibility: visible;
+  }
+}
+
+@media (max-width: 650px) {
+  header {
+    height: 30vh;
+  }
+  header h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 4rem;
+  }
+  .contact-section .contact-form .flex-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-section .contact-form input[type=text],
+  .contact-section .contact-form input[type=email],
+  .contact-section .contact-form textarea {
+    width: 90%;
+  }
+  .contact-section .contact-form ::-webkit-input-placeholder {
+    font-size: 1.5rem;
+  }
+  .contact-section .contact-form :-ms-input-placeholder {
+    font-size: 1.5rem;
+  }
+  .contact-section .contact-form ::-ms-input-placeholder {
+    font-size: 1.5rem;
+  }
+  .contact-section .contact-form ::placeholder {
+    font-size: 1.5rem;
+  }
+  .contact-section .contact-social-address p,
+  .contact-section .contact-social-address i {
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+  }
+}
+
+@media (max-width: 400px) {
+  header h1 {
+    font-size: 3rem;
+  }
+  footer p,
+  footer a {
+    font-size: 1.0rem;
+    line-height: 1.2rem;
+  }
 }

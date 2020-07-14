@@ -1,86 +1,220 @@
-    .contact-hero {
-        position: relative;
-    }
-    
-    //h1 text within the hero image
-    .contact-hero-text {
-        position: absolute;
-        top: 100px;
-        left: 30px;
-        color: $light-color;
-        z-index: 1;
-    }
-    
-    //section below header 
-    .contact-section {
-        display: flex;
-        flex-direction: row;
-        padding: 80px 0px 0px 50px;
-    }
-    
-    //parent container of the form
-    .contact-form {
-        background-color: $primary-color;
-        box-shadow: 20px 20px $accent-color;
-        padding: 30px;
-        width: 70%;
-        //offseting the position of the form
-        position: relative;
-        top: -180px;
-        left: -40px;
-        div {
-            padding-bottom: 30px;
-        }
-        .flex-row {
-            justify-content: center;
-        }
-        button {
-            width: 90%;
-        }
-    }
-    
-    //flexed parent container of the social icons and contact info
-    .contact-social-address {
-        justify-content: space-between;
-        width: 30%;
-        p {
-            color: $primary-color;
-        }
-        div {
-            padding-bottom: 15px;
-        }
-    }
-    
-    //flexed container for social icons
-    .social-icons {
-        a {
-            padding: 0px;
-        }
-        li {
-            padding: 10px 20px 10px 0px;
-        }
-    }
-    
-    .application-form {
-        text-align: center;
-    }
-    
-    input[type=text],
-    input[type=email] {
-        padding: 0px 0px 10px 10px;
-        background-color: $primary-color;
-        border: none;
-        border-bottom: 2px $accent-color solid;
-        color: $light-color;
-        width: 45%;
-        margin: 5px;
-    }
-    
-    textarea {
-        background-color: $primary-color;
-        color: $light-color;
-        border: 2px $accent-color solid;
-        resize: none;
-        padding: 15px;
-        width: 90%;
-    }
+       header {
+           height: 50vh;
+           background: url("../assets/contact-header.jpg") no-repeat center;
+           background-size: cover;
+           h1 {
+               margin-left: 50px;
+               margin-top: 80px;
+               color: $light-color;
+           }
+       }
+       
+       //contact section below header 
+       .contact-section {
+           display: flex;
+           flex-direction: row;
+           padding: 80px 0px 0px 50px;
+       }
+       
+       //parent container of the form
+       .contact-form {
+           background-color: $primary-color;
+           box-shadow: 20px 20px $accent-color;
+           padding: 30px;
+           width: 70%;
+           //offsetting the position of the form
+           position: relative;
+           top: -150px;
+           left: -40px;
+           div {
+               padding-bottom: 30px;
+           }
+           .flex-row {
+               justify-content: center;
+           }
+           button {
+               width: 90%;
+           }
+       }
+       
+       //flexed parent container of the social icons and contact info
+       .contact-social-address {
+           justify-content: space-between;
+           width: 30%;
+           p {
+               color: $primary-color;
+           }
+           div {
+               padding-bottom: 15px;
+           }
+       }
+       
+       //flexed container for social icons
+       .social-icons {
+           a {
+               padding: 0px;
+           }
+           li {
+               padding: 10px 20px 10px 0px;
+           }
+       }
+       
+       .application-form {
+           text-align: center;
+       }
+       
+       input[type=text],
+       input[type=email] {
+           padding: 0px 0px 10px 10px;
+           background-color: $primary-color;
+           border: none;
+           border-bottom: 2px $accent-color solid;
+           color: $light-color;
+           width: 45%;
+           margin: 5px;
+       }
+       
+       textarea {
+           background-color: $primary-color;
+           color: $light-color;
+           border: 2px $accent-color solid;
+           resize: none;
+           padding: 15px;
+           width: 90%;
+       }
+       
+       // media queries for the contact us page
+       @media (max-width: 1080px) {
+           .contact-social-address {
+               p,
+               i {
+                   font-size: 1.6rem;
+                   line-height: 2rem;
+               }
+           }
+       }
+       
+       @media (max-width: 960px) {
+           header {
+               height: 40vh;
+               nav ul {
+                   justify-content: center;
+                   a {
+                       font-size: 2.3rem;
+                   }
+               }
+               h1 {
+                   text-align: center;
+                   margin: 0px;
+               }
+           }
+           .contact-section {
+               flex-direction: column-reverse;
+               .contact-form,
+               .contact-social-address {
+                   width: 90%;
+               }
+               .contact-form {
+                   top: -70px;
+                   margin: 0px auto;
+               }
+               .contact-social-address {
+                   p,
+                   i {
+                       font-size: 2.2rem;
+                       line-height: 2.2rem;
+                   }
+                   text-align: center;
+                   .social-icons ul {
+                       justify-content: center;
+                   }
+                   display: flex;
+                   flex-direction: column-reverse;
+               }
+           }
+       }
+       
+       @media (max-width: 780px) {
+           header {
+               h1 {
+                   font-size: 7rem;
+                   margin-top: 90px;
+               }
+           }
+           footer {
+               p,
+               a {
+                   font-size: 1.2rem;
+                   line-height: 1.3rem;
+               }
+           }
+           nav {
+               ul {
+                   li {
+                       flex: 1 0 auto;
+                       a {
+                           display: none;
+                       }
+                       i {
+                           font-size: 3rem;
+                           color: $light-color;
+                           visibility: visible;
+                       }
+                   }
+               }
+           }
+       }
+       
+       @media (max-width: 650px) {
+           header {
+               height: 30vh;
+               h1 {
+                   font-size: 5rem;
+               }
+           }
+       }
+       
+       @media (max-width: 500px) {
+           header {
+               h1 {
+                   font-size: 4rem;
+               }
+           }
+           .contact-section {
+               .contact-form {
+                   .flex-row {
+                       flex-direction: column;
+                   }
+                   input[type=text],
+                   input[type=email],
+                   textarea {
+                       width: 90%;
+                   }
+                    ::placeholder {
+                       font-size: 1.5rem;
+                   }
+               }
+               .contact-social-address {
+                   p,
+                   i {
+                       font-size: 1.7rem;
+                       line-height: 1.7rem;
+                   }
+               }
+           }
+       }
+       
+       @media (max-width: 400px) {
+           header {
+               h1 {
+                   font-size: 3rem;
+               }
+           }
+           footer {
+               p,
+               a {
+                   font-size: 1.0rem;
+                   line-height: 1.2rem;
+               }
+           }
+       }
