@@ -170,15 +170,25 @@
                                     .lady-column {
                                         display: none;
                                     }
-                                    .lifetime-column {
-                                        text-align: center;
-                                        p {
-                                            font-size: 1.5rem;
-                                        }
-                                        h2,
-                                        button {
-                                            font-size: 2rem;
-                                        }
+                                }
+                                .vacation-days {
+                                    text-align: center;
+                                    p {
+                                        font-size: 1.5rem;
+                                    }
+                                    h2,
+                                    button {
+                                        font-size: 2rem;
+                                    }
+                                }
+                                .lifetime-column {
+                                    text-align: center;
+                                    p {
+                                        font-size: 1.5rem;
+                                    }
+                                    h2,
+                                    button {
+                                        font-size: 2rem;
                                     }
                                 }
                             }
@@ -210,6 +220,16 @@
                                         font-size: 5rem;
                                     }
                                 }
+                                .vacation-days {
+                                    width: 95%;
+                                    padding: 10px;
+                                    h2 {
+                                        font-size: 2.0rem;
+                                    }
+                                    p {
+                                        font-size: 1.2rem;
+                                    }
+                                }
                                 .lifetime-column {
                                     width: 95%;
                                     padding: 10px;
@@ -239,6 +259,12 @@
                                                 display: none;
                                             }
                                         }
+                                    }
+                                }
+                                .vacation-days {
+                                    padding: 10px 0px;
+                                    p {
+                                        display: none;
                                     }
                                 }
                             }

@@ -731,14 +731,24 @@ nav ul li i {
   .win-trip .lady-column {
     display: none;
   }
-  .win-trip .lifetime-column {
+  .vacation-days {
     text-align: center;
   }
-  .win-trip .lifetime-column p {
+  .vacation-days p {
     font-size: 1.5rem;
   }
-  .win-trip .lifetime-column h2,
-  .win-trip .lifetime-column button {
+  .vacation-days h2,
+  .vacation-days button {
+    font-size: 2rem;
+  }
+  .lifetime-column {
+    text-align: center;
+  }
+  .lifetime-column p {
+    font-size: 1.5rem;
+  }
+  .lifetime-column h2,
+  .lifetime-column button {
     font-size: 2rem;
   }
 }
@@ -768,6 +778,16 @@ nav ul li i {
   .home-hero h1 {
     font-size: 5rem;
   }
+  .vacation-days {
+    width: 95%;
+    padding: 10px;
+  }
+  .vacation-days h2 {
+    font-size: 2.0rem;
+  }
+  .vacation-days p {
+    font-size: 1.2rem;
+  }
   .lifetime-column {
     width: 95%;
     padding: 10px;
@@ -791,6 +811,12 @@ nav ul li i {
     padding: 10px 0px;
   }
   .win-trip .lifetime-column div p {
+    display: none;
+  }
+  .vacation-days {
+    padding: 10px 0px;
+  }
+  .vacation-days p {
     display: none;
   }
 }
