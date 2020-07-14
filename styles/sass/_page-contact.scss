@@ -1,6 +1,4 @@
- /////////////////////////////////////////////////////////
- ////////////// styles for the Contact  page    ////////////
- ////////////////////////////////////////////////////////
+ //styles for the contact page.
  .contact-hero {
      height: 50vh;
      background: url("../assets/contact-header.jpg") no-repeat center;
@@ -103,6 +101,7 @@
          h1 {
              text-align: center;
              margin: 0px;
+             width: 100%;
          }
      }
      .contact-section {

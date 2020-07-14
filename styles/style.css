@@ -553,10 +553,8 @@ nav ul li i {
 }
 
 .hero-image-insert {
-  width: 55%;
-  position: absolute;
-  top: 150px;
-  left: 540px;
+  width: 45%;
+  float: right;
 }
 
 .four-points {
@@ -708,6 +706,12 @@ nav ul li i {
   width: calc(100%/3 - 60px);
 }
 
+@media (max-width: 1060px) {
+  .home-hero h1 {
+    font-size: 5.5rem;
+  }
+}
+
 @media (max-width: 960px) {
   .home-hero {
     height: 40vh;
@@ -715,6 +719,10 @@ nav ul li i {
   .home-hero h1 {
     text-align: center;
     margin: 0px;
+    width: 100%;
+  }
+  .home-hero .hero-image-insert {
+    display: none;
   }
   .win-trip .flex-row {
     -webkit-box-orient: vertical;
@@ -1207,6 +1215,7 @@ textarea {
   .contact-hero h1 {
     text-align: center;
     margin: 0px;
+    width: 100%;
   }
   .contact-section {
     -webkit-box-orient: vertical;
