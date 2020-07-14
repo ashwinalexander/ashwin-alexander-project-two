@@ -1,332 +1,371 @@
-//styles for the home page.
-.home-hero {
-    height: 70vh;
-    background: url("../assets/home-header.jpg") no-repeat top;
-    background-size: cover;
-    h1 {
-        margin-left: 50px;
-        margin-top: 170px;
-        color: $accent-color;
-        width: 50%;
-    }
-}
-
-.hero-image-insert {
-    width: 45%;
-    float: right;
-}
-
-//the section with four informational points
-.four-points {
-    padding: 150px 10px 130px 130px;
-    background-color: lighten ($secondary-color, 5%);
-    ul {
-        justify-content: space-between;
-        li {
+        //styles for the home page.
+        .home-hero {
+            height: 70vh;
+            background: url("../assets/home-header.jpg") no-repeat top;
+            background-size: cover;
+            h1 {
+                margin-left: 50px;
+                margin-top: 170px;
+                color: $accent-color;
+                width: 50%;
+            }
+        }
+        
+        .hero-image-insert {
             width: 45%;
+            float: right;
         }
-        h2,
-        p {
-            color: $primary-color;
+        
+        //the section with four informational points
+        .four-points {
+            padding: 150px 10px 130px 130px;
+            background-color: lighten ($secondary-color, 5%);
+            ul {
+                justify-content: space-between;
+                li {
+                    width: 45%;
+                }
+                h2,
+                p {
+                    color: $primary-color;
+                }
+                i {
+                    font-size: 2rem;
+                    border-radius: 50%;
+                    background-color: $accent-color;
+                    padding: 10px;
+                    position: relative;
+                    top: 40px;
+                    left: -60px;
+                }
+            }
         }
-        i {
-            font-size: 2rem;
-            border-radius: 50%;
-            background-color: $accent-color;
-            padding: 10px;
-            position: relative;
-            top: 40px;
-            left: -60px;
-        }
-    }
-}
-
-// section with programs and locations
-.programs-locations {
-    padding: 40px;
-    background-color: $primary-color;
-    ul {
-        justify-content: space-between;
-    }
-    h3 {
-        text-transform: uppercase;
-    }
-    p {
-        font-size: 1.5rem;
-        // padding-bottom: 15px;
-    }
-    h3,
-    p {
-        color: $light-color;
-    }
-    li {
-        width: 45%;
-    }
-    .programs {
-        .yellow-border {
-            box-shadow: 20px 20px $accent-color;
-            position: relative;
-            top: -70px;
-            left: -40px;
-        }
-        .info {
-            text-align: left;
-            justify-content: space-evenly;
-        }
-    }
-    .locations {
-        .yellow-border {
-            box-shadow: -20px 20px $accent-color;
-            position: relative;
-            bottom: -50px;
-            right: -50px;
-        }
-        .info {
-            text-align: right;
-            justify-content: space-evenly;
-        }
-    }
-}
-
-//the extra vacation days section
-.vacation-days {
-    padding: 120px 120px 100px 120px; // slightly more padding on the top
-    text-align: center;
-    background-color: $secondary-color;
-    h2 {
-        color: $primary-color;
-    }
-    div {
-        padding: 10px 0px;
-    }
-}
-
-//win a trip of a lifetime section
-.win-trip {
-    padding: 100px 100px;
-    display: flex;
-    p,
-    h2 {
-        color: $primary-color;
-    }
-}
-
-//the  column with the photo 
-.lady-column {
-    width: 35%;
-    padding: 40px;
-    img {
-        box-shadow: -20px 20px $accent-color;
-    }
-}
-
-//the flexed column within the lifetime section
-.lifetime-column {
-    width: 65%;
-    padding: 20px;
-    div {
-        padding-bottom: 15px;
-    }
-}
-
-//gallery section 
-.gallery {
-    background-color: $primary-color;
-}
-
-.gallery-photos {
-    justify-content: center;
-    padding: 20px 20px;
-    div {
-        margin: 10px;
-        width: calc(100%/3 - 60px);
-        ;
-    }
-}
-
-// media queries for the home page
-@media (max-width: 1100px) {
-    .four-points {
-        li {
-            h2 {
-                font-size: 2.5rem;
+        
+        // section with programs and locations
+        .programs-locations {
+            padding: 40px;
+            background-color: $primary-color;
+            ul {
+                justify-content: space-between;
+            }
+            h3 {
+                text-transform: uppercase;
             }
             p {
                 font-size: 1.5rem;
-                ;
+                // padding-bottom: 15px;
             }
-        }
-    }
-}
-
-@media (max-width: 1060px) {
-    .home-hero {
-        h1 {
-            font-size: 5.5rem;
-        }
-    }
-}
-
-@media (max-width: 960px) {
-    .home-hero {
-        height: 40vh;
-        h1 {
-            text-align: center;
-            margin: 0px;
-            width: 100%;
-        }
-        li {
-            h2 {
-                font-size: 2.2rem;
-            }
+            h3,
             p {
-                font-size: 1.2rem;
+                color: $light-color;
+            }
+            li {
+                width: 45%;
+            }
+            .programs {
+                .yellow-border {
+                    box-shadow: 20px 20px $accent-color;
+                    position: relative;
+                    top: -70px;
+                    left: -40px;
+                }
+                .info {
+                    text-align: left;
+                    justify-content: space-evenly;
+                }
+            }
+            .locations {
+                .yellow-border {
+                    box-shadow: -20px 20px $accent-color;
+                    position: relative;
+                    bottom: -50px;
+                    right: -50px;
+                }
+                .info {
+                    text-align: right;
+                    justify-content: space-evenly;
+                }
+            }
+        }
+        
+        //the extra vacation days section
+        .vacation-days {
+            padding: 120px 120px 100px 120px; // slightly more padding on the top
+            text-align: center;
+            background-color: $secondary-color;
+            h2 {
+                color: $primary-color;
+            }
+            div {
+                padding: 10px 0px;
+            }
+        }
+        
+        //win a trip of a lifetime section
+        .win-trip {
+            padding: 100px 100px;
+            display: flex;
+            p,
+            h2 {
+                color: $primary-color;
+            }
+        }
+        
+        //the  column with the photo 
+        .lady-column {
+            width: 35%;
+            padding: 40px;
+            img {
+                box-shadow: -20px 20px $accent-color;
+            }
+        }
+        
+        //the flexed column within the lifetime section
+        .lifetime-column {
+            width: 65%;
+            padding: 20px;
+            div {
+                padding-bottom: 15px;
+            }
+        }
+        
+        //gallery section 
+        .gallery {
+            background-color: $primary-color;
+        }
+        
+        .gallery-photos {
+            justify-content: center;
+            padding: 20px 20px;
+            div {
+                margin: 10px;
+                width: calc(100%/3 - 60px);
                 ;
             }
         }
-        .hero-image-insert {
-            display: none;
+        
+        // media queries for the home page
+        @media (max-width: 1100px) {
+            .four-points {
+                li {
+                    h2 {
+                        font-size: 2.5rem;
+                    }
+                    p {
+                        font-size: 1.5rem;
+                        ;
+                    }
+                }
+            }
         }
-    }
-    // .four-points {
-    //     .flex-row {
-    //         flex-direction: column;
-    //         align-items: center;
-    //     }
-    // }
-    .win-trip {
-        .flex-row {
-            flex-direction: column;
-            align-items: center;
+        
+        @media (max-width: 1060px) {
+            .home-hero {
+                h1 {
+                    font-size: 5.5rem;
+                }
+            }
         }
-    }
-}
-
-@media (max-width: 850px) {
-    .win-trip {
-        .lady-column {
-            display: none;
+        
+        @media (max-width: 960px) {
+            .home-hero {
+                height: 40vh;
+                h1 {
+                    text-align: center;
+                    margin: 0px;
+                    width: 100%;
+                }
+                li {
+                    h2 {
+                        font-size: 2.2rem;
+                    }
+                    p {
+                        font-size: 1.2rem;
+                        ;
+                    }
+                }
+                .hero-image-insert {
+                    display: none;
+                }
+            }
+            .win-trip {
+                .flex-row {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+            .programs {
+                flex-direction: column;
+                align-content: center;
+                .yellow-border {
+                    display: none;
+                    ;
+                }
+            }
+            .locations {
+                flex-direction: column-reverse;
+                align-content: center;
+                .yellow-border {
+                    display: none;
+                    ;
+                }
+            }
         }
-    }
-    .vacation-days {
-        text-align: center;
-        p {
-            font-size: 1.5rem;
+        
+        @media (max-width: 850px) {
+            .win-trip {
+                .lady-column {
+                    display: none;
+                }
+            }
+            .vacation-days {
+                text-align: center;
+                p {
+                    font-size: 1.5rem;
+                }
+                h2,
+                button {
+                    font-size: 2rem;
+                }
+            }
+            .lifetime-column {
+                text-align: center;
+                p {
+                    font-size: 1.5rem;
+                }
+                h2,
+                button {
+                    font-size: 2rem;
+                }
+            }
         }
-        h2,
-        button {
-            font-size: 2rem;
+        
+        @media (max-width: 780px) {
+            .home-hero {
+                h1 {
+                    font-size: 7rem;
+                    margin-top: 90px;
+                }
+            }
+            .gallery-photos {
+                justify-content: space-evenly;
+                padding: 0px 0px;
+            }
+            .programs-locations {
+                h3 {
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1 rem;
+                }
+            }
+            .home-footer {
+                p,
+                a {
+                    font-size: 1.2rem;
+                    line-height: 1.3rem;
+                }
+            }
         }
-    }
-    .lifetime-column {
-        text-align: center;
-        p {
-            font-size: 1.5rem;
+        
+        @media (max-width: 650px) {
+            .home-hero {
+                height: 30vh;
+                h1 {
+                    font-size: 5rem;
+                }
+            }
+            .vacation-days {
+                width: 95%;
+                padding: 10px;
+                h2 {
+                    font-size: 2.0rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+            .lifetime-column {
+                width: 95%;
+                padding: 10px;
+                h2 {
+                    font-size: 2.0rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                }
+            }
         }
-        h2,
-        button {
-            font-size: 2rem;
+        
+        @media (max-width: 640px) {
+            .four-points {
+                padding: 40px;
+                .flex-row {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
         }
-    }
-}
-
-@media (max-width: 780px) {
-    .home-hero {
-        h1 {
-            font-size: 7rem;
-            margin-top: 90px;
+        
+        @media (max-width: 500px) {
+            .home-hero {
+                h1 {
+                    font-size: 4rem;
+                }
+            }
         }
-    }
-    .gallery-photos {
-        justify-content: space-evenly;
-        padding: 0px 0px;
-    }
-    .home-footer {
-        p,
-        a {
-            font-size: 1.2rem;
-            line-height: 1.3rem;
-        }
-    }
-}
-
-@media (max-width: 650px) {
-    .home-hero {
-        height: 30vh;
-        h1 {
-            font-size: 5rem;
-        }
-    }
-    .vacation-days {
-        width: 95%;
-        padding: 10px;
-        h2 {
-            font-size: 2.0rem;
-        }
-        p {
-            font-size: 1.2rem;
-        }
-    }
-    .lifetime-column {
-        width: 95%;
-        padding: 10px;
-        h2 {
-            font-size: 2.0rem;
-        }
-        p {
-            font-size: 1.2rem;
-        }
-    }
-}
-
-@media (max-width: 640px) {
-    .four-points {
-        padding: 40px;
-        .flex-row {
-            flex-direction: column;
-            align-items: center;
-        }
-    }
-}
-
-@media (max-width: 500px) {
-    .home-hero {
-        h1 {
-            font-size: 4rem;
-        }
-    }
-}
-
-@media (max-width: 446px) {
-    .win-trip {
-        padding: 10px 0px;
-        .lifetime-column {
-            div {
+        
+        @media (max-width: 446px) {
+            .win-trip {
+                padding: 10px 0px;
+                .lifetime-column {
+                    div {
+                        p {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .programs-locations {
+                align-items: center;
+                .info {
+                    h3 {
+                        width: 20%;
+                        font-size: 2rem;
+                        line-height: 2rem;
+                        padding-bottom: 20px;
+                        ;
+                        ;
+                    }
+                    p {
+                        display: none;
+                    }
+                    button {
+                        font-size: 1rem;
+                        margin-bottom: 20px;
+                        ;
+                    }
+                }
+            }
+            .vacation-days {
+                padding: 10px 0px;
                 p {
                     display: none;
                 }
             }
         }
-    }
-    .vacation-days {
-        padding: 10px 0px;
-        p {
-            display: none;
+        
+        @media (max-width: 400px) {
+            .home-hero {
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+            .home-footer {
+                p,
+                a {
+                    font-size: 1.0rem;
+                    line-height: 1.2rem;
+                }
+            }
         }
-    }
-}
-
-@media (max-width: 400px) {
-    .home-hero {
-        h1 {
-            font-size: 3rem;
-        }
-    }
-    .home-footer {
-        p,
-        a {
-            font-size: 1.0rem;
-            line-height: 1.2rem;
-        }
-    }
-}
